@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+/* CABECALHO */
+.cabecalho {
+    flex-basis: 30%;
+}
+.cabecalho__logo {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.cabecalho__logo img {
+    
+}
+
+.cabecalho figcaption {
+    display: none;
+}
+
+/* MENU */
+.cabecalho__menuNav {
+    
+}
+.cabecalho__menuLista {
+    list-style: none;
+}
+.cabecalho__menuItem {
+    margin-bottom: 25px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cabecalho__menuItem img {
+    max-width: 22px;
+    margin-right: 10px;
+
+}
+.cabecalho__menuItem a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    vertical-align: top;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.conteudoPrincipal {
+    flex-basis: 70%;
+    padding-top: 35px;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+}
+.conteudoPrincipal__titulo {
+    color: #000;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.conteudoPrincipal__titulo a {
+    text-decoration: none;
+    color: #000;
+}
+.conteudoPrincipal__form {
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+.conteudoPrincipal__form textarea {
+    display: block; width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.conteudoPrincipal__form button {
+    background-color: #1da1f2;
+    border: none; outline: none;
+    border-radius: 15px;
+    padding: 8px 20px;
+    color: #fff;
+}
+.conteudoPrincipal__form button[disabled] {
+    background-color: rgba(29, 161, 242, .4);
+}
+.conteudoPrincipal__feed {
+
+}
+.conteudoPrincipal__listaTweets {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincipal__tweet {
+    padding: 20px 30px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.tweet__fotoPerfil {
+    max-width: 40px;
+}
+.tweet__conteudo {
+    margin-left: 15px;
+}
+.tweet__conteudo h2 {
+    display: inline-block;
+}
+.tweet__conteudo span {
+    display: inline-block;
+    color: #828282;
+}
+.tweet__conteudo p {
+    margin-top: 15px;
+    color: #333;
+}
+
