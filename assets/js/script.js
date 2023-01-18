@@ -2,6 +2,8 @@ const textarea = document.querySelector('textarea');
 const feed = document.querySelector('.conteudoPrincipal__listaTweets');
 const tweetar = document.querySelector('button');
 tweetar.disabled = true;
+const homeButton = document.querySelector('.conteudoPrincipal__titulo');
+const logo = document.querySelector('.cabecalho__logo');
 
 textarea.addEventListener('keydown', () => {
     if(textarea.value) {
@@ -19,7 +21,15 @@ function pegarTweet(event) {
     } 
     const tweetTextarea = textarea.value;
     criarTweet(tweetTextarea); 
-}
+};
+
+homeButton.addEventListener('click', () => {
+    document.location.reload();
+});
+
+logo.addEventListener('click', () => {
+    document.location.reload();
+});
 
 tweetar.addEventListener('click', pegarTweet);
 
